@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "M:\\serviceji\\build\\firebase_crashlytics\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sv\\values-sv.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\a3921a8d81e1a8d83ffb144102cf084f\\jetified-play-services-basement-17.0.0\\res\\values-sv\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "206",
+                        "endOffsets": "453"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "206",
+                        "endOffsets": "307"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\5500ddbbf3aeb6755e6f55d1da819bd0\\core-1.0.0\\res\\values-sv\\values-sv.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "312",
+                        "endColumns": "100",
+                        "endOffsets": "408"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "M:\\serviceji\\build\\firebase_crashlytics\\intermediates\\res\\merged\\release\\values-sv\\values-sv.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\a3921a8d81e1a8d83ffb144102cf084f\\jetified-play-services-basement-17.0.0\\res\\values-sv\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "206",
+                        "endOffsets": "453"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "206",
+                        "endOffsets": "307"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\5500ddbbf3aeb6755e6f55d1da819bd0\\core-1.0.0\\res\\values-sv\\values-sv.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "312",
+                        "endColumns": "100",
+                        "endOffsets": "408"
+                    }
+                }
+            ]
+        }
+    ]
+}

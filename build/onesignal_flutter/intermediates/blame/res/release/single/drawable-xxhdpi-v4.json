@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "M:\\serviceji\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png",
+        "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\16bf87492a25e797759ceb31ff77b8ff\\jetified-play-services-base-16.0.1\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "M:\\serviceji\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\16bf87492a25e797759ceb31ff77b8ff\\jetified-play-services-base-16.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "M:\\serviceji\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\16bf87492a25e797759ceb31ff77b8ff\\jetified-play-services-base-16.0.1\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "M:\\serviceji\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\ic_os_notification_fallback_white_24dp.png",
+        "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\7d836aaf9900ed40862559b7c17a270a\\jetified-OneSignal-3.15.6\\res\\drawable-xxhdpi-v4\\ic_os_notification_fallback_white_24dp.png"
+    },
+    {
+        "merged": "M:\\serviceji\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\16bf87492a25e797759ceb31ff77b8ff\\jetified-play-services-base-16.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "M:\\serviceji\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\16bf87492a25e797759ceb31ff77b8ff\\jetified-play-services-base-16.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "M:\\serviceji\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\16bf87492a25e797759ceb31ff77b8ff\\jetified-play-services-base-16.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "M:\\serviceji\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\best buy\\.gradle\\caches\\transforms-2\\files-2.1\\0a47da231d6eec1f7ad97fc028072710\\core-1.1.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

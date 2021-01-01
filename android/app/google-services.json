@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "838373187861",
+    "project_id": "serviceji2020-cdf91",
+    "storage_bucket": "serviceji2020-cdf91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838373187861:android:b20066ae8fa21b620a091c",
+        "android_client_info": {
+          "package_name": "com.serviceji.serviceji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838373187861-9ck9f47vjckqjn6hos57karljhusjahu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcxf3MbhJ3TOmLqJE_Cp2P0xJ6qtopbLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838373187861-9ck9f47vjckqjn6hos57karljhusjahu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

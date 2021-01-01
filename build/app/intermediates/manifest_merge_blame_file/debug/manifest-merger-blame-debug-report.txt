@@ -1,0 +1,534 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.serviceji.serviceji"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->M:\serviceji\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->M:\serviceji\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->M:\serviceji\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->M:\serviceji\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->M:\serviceji\android\app\src\main\AndroidManifest.xml:5:5-79
+12-->M:\serviceji\android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->M:\serviceji\android\app\src\main\AndroidManifest.xml:6:5-81
+13-->M:\serviceji\android\app\src\main\AndroidManifest.xml:6:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->M:\serviceji\android\app\src\main\AndroidManifest.xml:7:5-80
+14-->M:\serviceji\android\app\src\main\AndroidManifest.xml:7:22-77
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->M:\serviceji\android\app\src\main\AndroidManifest.xml:8:5-65
+15-->M:\serviceji\android\app\src\main\AndroidManifest.xml:8:22-62
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+16-->[:connectivity] M:\serviceji\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-76
+16-->[:connectivity] M:\serviceji\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-73
+17    <permission
+17-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:7:5-9:47
+18        android:name="com.serviceji.serviceji.permission.C2D_MESSAGE"
+18-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:8:9-63
+19        android:protectionLevel="signature" />
+19-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:9:9-44
+20
+21    <uses-permission android:name="com.serviceji.serviceji.permission.C2D_MESSAGE" />
+21-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:11:5-79
+21-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:11:22-76
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+22-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:17:5-82
+22-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:17:22-79
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:18:5-68
+23-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:18:22-65
+24    <!--
+25 Required so the device vibrates on receiving a push notification.
+26         Vibration settings of the device still apply.
+27    -->
+28    <uses-permission android:name="android.permission.VIBRATE" />
+28-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:23:5-66
+28-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:23:22-63
+29    <!--
+30 Use to restore notifications the user hasn't interacted with.
+31         They could be missed notifications if the user reboots their device if this isn't in place.
+32    -->
+33    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+33-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:29:5-81
+33-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:29:22-78
+34    <!-- Samsung -->
+35    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+35-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:31:5-86
+35-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:31:22-83
+36    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+36-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:32:5-87
+36-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:32:22-84
+37    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+37-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:33:5-81
+37-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:33:22-78
+38    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+38-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:34:5-83
+38-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:34:22-80
+39    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+39-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:35:5-88
+39-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:35:22-85
+40    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+40-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:36:5-92
+40-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:36:22-89
+41    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+41-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:37:5-84
+41-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:37:22-81
+42    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+42-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:38:5-83
+42-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:38:22-80
+43    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+43-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:39:5-91
+43-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:39:22-88
+44    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+44-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:40:5-92
+44-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:40:22-89
+45    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+45-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:41:5-93
+45-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:41:22-90
+46    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+46-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:42:5-73
+46-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:42:22-70
+47    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+47-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:43:5-82
+47-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:43:22-79
+48    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+48-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:44:5-83
+48-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:44:22-80
+49    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+49-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:45:5-88
+49-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:45:22-85
+50    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+50-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:46:5-89
+50-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:46:22-86
+51    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+51-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:5-110
+51-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
+52
+53    <application
+53-->M:\serviceji\android\app\src\main\AndroidManifest.xml:13:5-50:19
+54        android:name="io.flutter.app.FlutterApplication"
+54-->M:\serviceji\android\app\src\main\AndroidManifest.xml:15:9-57
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.1.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\0a47da231d6eec1f7ad97fc028072710\core-1.1.0\AndroidManifest.xml:24:18-86
+56        android:debuggable="true"
+57        android:icon="@mipmap/ic_launcher"
+57-->M:\serviceji\android\app\src\main\AndroidManifest.xml:16:9-43
+58        android:label="Service Ji"
+58-->M:\serviceji\android\app\src\main\AndroidManifest.xml:17:9-35
+59        android:requestLegacyExternalStorage="true" >
+59-->M:\serviceji\android\app\src\main\AndroidManifest.xml:14:9-52
+60        <activity
+60-->M:\serviceji\android\app\src\main\AndroidManifest.xml:18:9-44:20
+61            android:name="com.serviceji.serviceji.MainActivity"
+61-->M:\serviceji\android\app\src\main\AndroidManifest.xml:19:13-41
+62            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+62-->M:\serviceji\android\app\src\main\AndroidManifest.xml:20:13-163
+63            android:hardwareAccelerated="true"
+63-->M:\serviceji\android\app\src\main\AndroidManifest.xml:21:13-47
+64            android:launchMode="singleTop"
+64-->M:\serviceji\android\app\src\main\AndroidManifest.xml:22:13-43
+65            android:theme="@style/LaunchTheme"
+65-->M:\serviceji\android\app\src\main\AndroidManifest.xml:23:13-47
+66            android:windowSoftInputMode="adjustResize" >
+66-->M:\serviceji\android\app\src\main\AndroidManifest.xml:24:13-55
+67
+68            <!--
+69                 Specifies an Android theme to apply to this Activity as soon as
+70                 the Android process has started. This theme is visible to the user
+71                 while the Flutter UI initializes. After that, this theme continues
+72                 to determine the Window background behind the Flutter UI.
+73            -->
+74            <meta-data
+74-->M:\serviceji\android\app\src\main\AndroidManifest.xml:29:13-31:57
+75                android:name="io.flutter.embedding.android.NormalTheme"
+75-->M:\serviceji\android\app\src\main\AndroidManifest.xml:30:17-72
+76                android:resource="@style/NormalTheme" />
+76-->M:\serviceji\android\app\src\main\AndroidManifest.xml:31:17-54
+77            <!--
+78                 Displays an Android View that continues showing the launch screen
+79                 Drawable until Flutter paints its first frame, then this splash
+80                 screen fades out. A splash screen is useful to avoid any visual
+81                 gap between the end of Android's launch screen and the painting of
+82                 Flutter's first frame.
+83            -->
+84            <meta-data
+84-->M:\serviceji\android\app\src\main\AndroidManifest.xml:37:13-39:66
+85                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+85-->M:\serviceji\android\app\src\main\AndroidManifest.xml:38:17-81
+86                android:resource="@drawable/launch_background" />
+86-->M:\serviceji\android\app\src\main\AndroidManifest.xml:39:17-63
+87
+88            <intent-filter>
+88-->M:\serviceji\android\app\src\main\AndroidManifest.xml:40:13-43:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->M:\serviceji\android\app\src\main\AndroidManifest.xml:41:17-69
+89-->M:\serviceji\android\app\src\main\AndroidManifest.xml:41:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->M:\serviceji\android\app\src\main\AndroidManifest.xml:42:17-77
+91-->M:\serviceji\android\app\src\main\AndroidManifest.xml:42:27-74
+92            </intent-filter>
+93        </activity>
+94        <!--
+95             Don't delete the meta-data below.
+96             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+97        -->
+98        <meta-data
+98-->M:\serviceji\android\app\src\main\AndroidManifest.xml:47:9-49:33
+99            android:name="flutterEmbedding"
+99-->M:\serviceji\android\app\src\main\AndroidManifest.xml:48:13-44
+100            android:value="2" />
+100-->M:\serviceji\android\app\src\main\AndroidManifest.xml:49:13-30
+101
+102        <service
+102-->[:firebase_crashlytics] M:\serviceji\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+103            android:name="com.google.firebase.components.ComponentDiscoveryService"
+103-->[:firebase_crashlytics] M:\serviceji\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+104            android:directBootAware="true"
+104-->[com.google.firebase:firebase-common:19.4.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\bffd3b54992ecf59c91a4b9b95d04ba9\jetified-firebase-common-19.4.0\AndroidManifest.xml:35:13-43
+105            android:exported="false" >
+105-->[com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\78bb7df077b0e646edd811ac6113846a\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:17:13-37
+106            <meta-data
+106-->[:firebase_crashlytics] M:\serviceji\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+107                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+107-->[:firebase_crashlytics] M:\serviceji\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-130
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[:firebase_crashlytics] M:\serviceji\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+109            <meta-data
+109-->[:firebase_core] M:\serviceji\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+110                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+110-->[:firebase_core] M:\serviceji\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[:firebase_core] M:\serviceji\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\78bb7df077b0e646edd811ac6113846a\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:18:13-20:85
+113                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+113-->[com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\78bb7df077b0e646edd811ac6113846a\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:19:17-115
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\78bb7df077b0e646edd811ac6113846a\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:20:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:39:13-41:85
+116                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+116-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:40:17-119
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:41:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3391371e76cc3bf3eb1ed0aba692d2ca\jetified-firebase-iid-20.3.0\AndroidManifest.xml:32:13-34:85
+119                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+119-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3391371e76cc3bf3eb1ed0aba692d2ca\jetified-firebase-iid-20.3.0\AndroidManifest.xml:33:17-96
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3391371e76cc3bf3eb1ed0aba692d2ca\jetified-firebase-iid-20.3.0\AndroidManifest.xml:34:17-82
+121            <meta-data
+121-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\5fbd491cb081de32609d6138af83b334\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:30:13-32:85
+122                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+122-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\5fbd491cb081de32609d6138af83b334\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:31:17-139
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\5fbd491cb081de32609d6138af83b334\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:32:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\876f3ba4ef91c9f2240ddf602c52cc28\jetified-firebase-installations-16.3.4\AndroidManifest.xml:18:13-20:85
+125                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+125-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\876f3ba4ef91c9f2240ddf602c52cc28\jetified-firebase-installations-16.3.4\AndroidManifest.xml:19:17-127
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\876f3ba4ef91c9f2240ddf602c52cc28\jetified-firebase-installations-16.3.4\AndroidManifest.xml:20:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3c97ae955d445ab7e6b2fb3a5023f455\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+128                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+128-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3c97ae955d445ab7e6b2fb3a5023f455\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3c97ae955d445ab7e6b2fb3a5023f455\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+130        </service>
+131
+132        <provider
+132-->[:image_picker] M:\serviceji\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+133            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+133-->[:image_picker] M:\serviceji\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+134            android:authorities="com.serviceji.serviceji.flutter.image_provider"
+134-->[:image_picker] M:\serviceji\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+135            android:exported="false"
+135-->[:image_picker] M:\serviceji\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+136            android:grantUriPermissions="true" >
+136-->[:image_picker] M:\serviceji\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+137            <meta-data
+137-->[:image_picker] M:\serviceji\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+138                android:name="android.support.FILE_PROVIDER_PATHS"
+138-->[:image_picker] M:\serviceji\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+139                android:resource="@xml/flutter_image_picker_file_paths" />
+139-->[:image_picker] M:\serviceji\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+140        </provider>
+141
+142        <activity
+142-->[:url_launcher] M:\serviceji\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+143            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+143-->[:url_launcher] M:\serviceji\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+144            android:exported="false"
+144-->[:url_launcher] M:\serviceji\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+145            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+145-->[:url_launcher] M:\serviceji\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+146
+147        <meta-data
+147-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:49:9-51:51
+148            android:name="onesignal_app_id"
+148-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:50:13-44
+149            android:value="${onesignal_app_id}" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+149-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:51:13-48
+150        <meta-data
+150-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:53:9-55:70
+151            android:name="onesignal_google_project_number"
+151-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:54:13-59
+152            android:value="str:${onesignal_google_project_number}" />
+152-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:55:13-67
+153
+154        <receiver
+154-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:57:9-67:20
+155            android:name="com.onesignal.GcmBroadcastReceiver"
+155-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:58:13-62
+156            android:permission="com.google.android.c2dm.permission.SEND" >
+156-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:59:13-73
+157
+158            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+159            <intent-filter android:priority="999" >
+159-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:62:13-66:29
+159-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:62:28-50
+160                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+160-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:63:17-81
+160-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:63:25-78
+161
+162                <category android:name="com.serviceji.serviceji" />
+162-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:65:17-61
+162-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:65:27-58
+163            </intent-filter>
+164        </receiver>
+165        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+165-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:68:9-77
+165-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:68:19-74
+166
+167        <service
+167-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:70:9-76:19
+168            android:name="com.onesignal.HmsMessageServiceOneSignal"
+168-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:71:13-68
+169            android:exported="false" >
+169-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:72:13-37
+170            <intent-filter>
+170-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:73:13-75:29
+171                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+171-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:74:17-81
+171-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:74:25-78
+172            </intent-filter>
+173        </service>
+174
+175        <activity
+175-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:78:9-84:20
+176            android:name="com.onesignal.NotificationOpenedActivityHMS"
+176-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:79:13-71
+177            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+177-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:80:13-72
+178            <intent-filter>
+178-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:81:13-83:29
+179                <action android:name="android.intent.action.VIEW" />
+179-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:82:17-69
+179-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:82:25-66
+180            </intent-filter>
+181        </activity>
+182
+183        <service android:name="com.onesignal.GcmIntentService" />
+183-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:86:9-66
+183-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:86:18-63
+184        <service
+184-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:87:9-89:72
+185            android:name="com.onesignal.GcmIntentJobService"
+185-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:88:13-61
+186            android:permission="android.permission.BIND_JOB_SERVICE" />
+186-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:89:13-69
+187        <service
+187-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:90:9-92:72
+188            android:name="com.onesignal.RestoreJobService"
+188-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:91:13-59
+189            android:permission="android.permission.BIND_JOB_SERVICE" />
+189-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:92:13-69
+190        <service
+190-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:93:9-95:72
+191            android:name="com.onesignal.RestoreKickoffJobService"
+191-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:94:13-66
+192            android:permission="android.permission.BIND_JOB_SERVICE" />
+192-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:95:13-69
+193        <service
+193-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:96:9-98:43
+194            android:name="com.onesignal.SyncService"
+194-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:97:13-53
+195            android:stopWithTask="true" />
+195-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:98:13-40
+196        <service
+196-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:99:9-101:72
+197            android:name="com.onesignal.SyncJobService"
+197-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:100:13-56
+198            android:permission="android.permission.BIND_JOB_SERVICE" />
+198-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:101:13-69
+199
+200        <activity
+200-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:103:9-105:75
+201            android:name="com.onesignal.PermissionsActivity"
+201-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:104:13-61
+202            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+202-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:105:13-72
+203
+204        <service android:name="com.onesignal.NotificationRestoreService" />
+204-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:107:9-76
+204-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:107:18-73
+205
+206        <receiver android:name="com.onesignal.BootUpReceiver" >
+206-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:109:9-114:20
+206-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:109:19-62
+207            <intent-filter>
+207-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:110:13-113:29
+208                <action android:name="android.intent.action.BOOT_COMPLETED" />
+208-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:111:17-79
+208-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:111:25-76
+209                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+209-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:112:17-82
+209-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:112:25-79
+210            </intent-filter>
+211        </receiver>
+212        <receiver android:name="com.onesignal.UpgradeReceiver" >
+212-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:115:9-119:20
+212-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:115:19-63
+213            <intent-filter>
+213-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:116:13-118:29
+214                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+214-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:117:17-84
+214-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:117:25-81
+215            </intent-filter>
+216        </receiver>
+217        <!--
+218             FirebaseMessagingService performs security checks at runtime,
+219             but set to not exported to explicitly avoid allowing another app to call it.
+220        -->
+221        <service
+221-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:28:9-35:19
+222            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+222-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:29:13-82
+223            android:directBootAware="true"
+223-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:30:13-43
+224            android:exported="false" >
+224-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:31:13-37
+225            <intent-filter android:priority="-500" >
+225-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:32:13-34:29
+225-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:32:28-51
+226                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+226-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:33:17-78
+226-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\9d6e52f89ae870ff2e8358ecec7c2f63\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:33:25-75
+227            </intent-filter>
+228        </service>
+229
+230        <receiver
+230-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3391371e76cc3bf3eb1ed0aba692d2ca\jetified-firebase-iid-20.3.0\AndroidManifest.xml:37:9-44:20
+231            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+231-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3391371e76cc3bf3eb1ed0aba692d2ca\jetified-firebase-iid-20.3.0\AndroidManifest.xml:38:13-78
+232            android:exported="true"
+232-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3391371e76cc3bf3eb1ed0aba692d2ca\jetified-firebase-iid-20.3.0\AndroidManifest.xml:39:13-36
+233            android:permission="com.google.android.c2dm.permission.SEND" >
+233-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3391371e76cc3bf3eb1ed0aba692d2ca\jetified-firebase-iid-20.3.0\AndroidManifest.xml:40:13-73
+234            <intent-filter>
+234-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\3391371e76cc3bf3eb1ed0aba692d2ca\jetified-firebase-iid-20.3.0\AndroidManifest.xml:41:13-43:29
+235                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+235-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:63:17-81
+235-->[com.onesignal:OneSignal:3.15.6] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\7d836aaf9900ed40862559b7c17a270a\jetified-OneSignal-3.15.6\AndroidManifest.xml:63:25-78
+236            </intent-filter>
+237        </receiver>
+238
+239        <activity
+239-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\e3c01756a42c4c07fe8b82675aa5c619\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+240            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+240-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\e3c01756a42c4c07fe8b82675aa5c619\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+241            android:exported="false"
+241-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\e3c01756a42c4c07fe8b82675aa5c619\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+242            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+242-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\e3c01756a42c4c07fe8b82675aa5c619\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+243
+244        <receiver
+244-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:29:9-33:20
+245            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+245-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:30:13-85
+246            android:enabled="true"
+246-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:31:13-35
+247            android:exported="false" >
+247-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:32:13-37
+248        </receiver>
+249
+250        <service
+250-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:35:9-38:40
+251            android:name="com.google.android.gms.measurement.AppMeasurementService"
+251-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:36:13-84
+252            android:enabled="true"
+252-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:37:13-35
+253            android:exported="false" />
+253-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:38:13-37
+254        <service
+254-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:39:9-43:72
+255            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+255-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
+256            android:enabled="true"
+256-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:41:13-35
+257            android:exported="false"
+257-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:42:13-37
+258            android:permission="android.permission.BIND_JOB_SERVICE" />
+258-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\30173ecfceba8220d5c50ac6b9f5a5c5\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:43:13-69
+259
+260        <provider
+260-->[com.google.firebase:firebase-common:19.4.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\bffd3b54992ecf59c91a4b9b95d04ba9\jetified-firebase-common-19.4.0\AndroidManifest.xml:26:9-31:39
+261            android:name="com.google.firebase.provider.FirebaseInitProvider"
+261-->[com.google.firebase:firebase-common:19.4.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\bffd3b54992ecf59c91a4b9b95d04ba9\jetified-firebase-common-19.4.0\AndroidManifest.xml:27:13-77
+262            android:authorities="com.serviceji.serviceji.firebaseinitprovider"
+262-->[com.google.firebase:firebase-common:19.4.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\bffd3b54992ecf59c91a4b9b95d04ba9\jetified-firebase-common-19.4.0\AndroidManifest.xml:28:13-72
+263            android:directBootAware="true"
+263-->[com.google.firebase:firebase-common:19.4.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\bffd3b54992ecf59c91a4b9b95d04ba9\jetified-firebase-common-19.4.0\AndroidManifest.xml:29:13-43
+264            android:exported="false"
+264-->[com.google.firebase:firebase-common:19.4.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\bffd3b54992ecf59c91a4b9b95d04ba9\jetified-firebase-common-19.4.0\AndroidManifest.xml:30:13-37
+265            android:initOrder="100" />
+265-->[com.google.firebase:firebase-common:19.4.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\bffd3b54992ecf59c91a4b9b95d04ba9\jetified-firebase-common-19.4.0\AndroidManifest.xml:31:13-36
+266
+267        <meta-data
+267-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\a3921a8d81e1a8d83ffb144102cf084f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+268            android:name="com.google.android.gms.version"
+268-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\a3921a8d81e1a8d83ffb144102cf084f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+269            android:value="@integer/google_play_services_version" />
+269-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\a3921a8d81e1a8d83ffb144102cf084f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+270
+271        <service
+271-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\2994832bc2099ccfcf85e1492553fb01\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:29:9-35:19
+272            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+272-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\2994832bc2099ccfcf85e1492553fb01\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:30:13-103
+273            android:exported="false" >
+273-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\2994832bc2099ccfcf85e1492553fb01\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:31:13-37
+274            <meta-data
+274-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\2994832bc2099ccfcf85e1492553fb01\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:32:13-34:39
+275                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+275-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\2994832bc2099ccfcf85e1492553fb01\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:33:17-94
+276                android:value="cct" />
+276-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\2994832bc2099ccfcf85e1492553fb01\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:34:17-36
+277        </service>
+278        <service
+278-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\df492aba2ae78221526579225265fe49\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+279            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+279-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\df492aba2ae78221526579225265fe49\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+280            android:exported="false"
+280-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\df492aba2ae78221526579225265fe49\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+281            android:permission="android.permission.BIND_JOB_SERVICE" >
+281-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\df492aba2ae78221526579225265fe49\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+282        </service>
+283
+284        <receiver
+284-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\df492aba2ae78221526579225265fe49\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+285            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+285-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\df492aba2ae78221526579225265fe49\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+286            android:exported="false" />
+286-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\best buy\.gradle\caches\transforms-2\files-2.1\df492aba2ae78221526579225265fe49\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+287    </application>
+288
+289</manifest>
